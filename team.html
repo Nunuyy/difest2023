@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css'>
+    <link rel='stylesheet' href='https://static.fontawesome.com/css/fontawesome-app.css'>
+    <link rel='stylesheet' href='https://pro.fontawesome.com/releases/v5.2.0/css/all.css'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,700'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/1f3c27e6e5.js" crossorigin="anonymous"></script>
+    <style type="text/tailwindcss">
+        body{
+            font-family: 'Inter', sans-serif;
+        }
+        .navbar-fixed{
+            @apply fixed z-[9999] bg-slate-900 bg-opacity-20;
+            backdrop-filter: blur(5px);
+            box-shadow: inset 0 -1px 0 0 rgba(126, 126, 126, 0.2);
+        }
+        .hamburger-line{
+            @apply w-[30px] h-[2px] my-2 block bg-dark;
+        }
+        .hamburger-active > span:nth-child(1){
+            @apply rotate-45;
+        }
+        .hamburger-active > span:nth-child(3){
+            @apply -rotate-45;
+        }
+        .hamburger-active > span:nth-child(2){
+            @apply scale-0;
+        }
+
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                container: {
+                    center: true,
+                    padding: '16px',
+                },
+                extend: {
+                    fontFamily: {
+                        default: ['Poppins', 'sans-serif'],
+                        subhero: ['Oooh Baby', 'cursive'],
+                    },
+                    colors: {
+                        mermud: '#ec4899',
+                        dark: '#ffffff',
+                        dark2: '#ffffff',
+                    },
+                    screens: {
+                        '2xl': '1320px',
+                    },
+                },
+            },
+        }
+    </script>
+    <title>Team Mephet</title>
+    
+    <script src="https://kit.fontawesome.com/70c682a6d6.js" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-slate-900  font-default">
+    <div class="mx-12">
+        <!-- Header Section Start -->
+        <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+            <div class="container" id="home">
+                <div class="flex items-center justify-between relative">
+                    <div class="px-4">
+                        <a href="#home" class="font-bold bg-white px-4 rounded-full tex-lg text-mermud block my-6">ME<span class="text-cyan-600">VERS</span></a>
+                    </div>
+                    <div class="flex items-center px-4">
+                        <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
+                            <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+                            <span class="hamburger-line transition duration-300 ease-in-out"></span>
+                            <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+                        </button>
+                        <nav id="nav-menu"
+                            class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+                            <ul class="block lg:flex">
+                                <li class="group">
+                                    <a href="index.html"
+                                        class="text-base text-dark py-2 mx-8 flex group-hover:text-white">Back to Home</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        </div>
+    <section id="desc" class="container my-32">
+        <section class="container my-32">
+            <div>
+                <div class="w-full px-4">
+                    <div class="mx-auto mb-8 text-center">
+                        <h4 class="font-medium text-lg text-white my-4 bg-slate-300 bg-opacity-20 px-2 rounded-lg text-center lg:w-1/5 mx-auto capitalize">Our Team Web Design</h4>
+                        <h2 class="mb-4 text-3xl font-bold text-slate-400 sm:text-4xl lg:text-5xl">MEPHET
+                        </h2>
+                        <p class="font-medium text-medium text-center text-stone-200 md:text-lg">SMKN 2 Sumedang
+                        </p>
+                    </div>
+                </div>
+                <div class="w-full mx-auto text-center self-center px-4 lg:w-1/2">
+                    <p class="font-medium text-medium text-center text-stone-600 md:text-lg">member
+                    </p>
+                    <div class="card-meta my-24">
+                        <div class="circle"></div>
+                        <div class="content font-light text-medium text-white md:text-sm my-2 text-left">
+                          <h3 class="font-medium text-lg text-white bg-slate-300 bg-opacity-20 px-2 rounded-lg">Nurchayati Amalia Abdillah</h3>
+                          <p class="text-gray-200">XII Software Engineering 1</p>
+                          <a href="https://www.linkedin.com/in/nurchayati-amalia-789b53249/" target="_blank" class="rainbow-btn">See</a>
+                        </div>
+                        
+                        <img src="img/nunuy.png" class="rounded-full" alt="">
+                      </div>
+                    
+                    <div class="relative mt-10 lg:mt-9 lg:right-0">
+                        <span class="absolute -bottom-0 -z-10 left-1/2 -translate-x-1/2 md:scale-125">
+                        </span>
+                    </div>
+                    </div>
+                     <div class="w-full mx-auto text-center self-center px-4 lg:w-1/2">
+                    <div class="card-meta my-24">
+                        <div class="circle"></div>
+                        <div class="content font-light text-medium text-white md:text-sm my-2 text-justify">
+                          <h3 class="font-medium text-lg text-white bg-slate-300 bg-opacity-20 px-2 rounded-lg">Aisyah Nurfadilah</h3>
+                          <p class="text-gray-200">XI Software Engineering 4</p>
+                          <a href="#" target="_blank" class="rainbow-btn">See</a>
+                        </div>
+                        
+                        <img src="img/aisyah.png" class="rounded-full" alt="">
+                      </div>
+                    
+                    <div class="relative mt-10 lg:mt-9 lg:right-0">
+                        <span class="absolute -bottom-0 -z-10 left-1/2 -translate-x-1/2 md:scale-125">
+                        </span>
+                    </div>
+                    </div>
+            </div>
+        </section>
+</section>
+</body>
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css'>
+    <link rel='stylesheet' href='https://static.fontawesome.com/css/fontawesome-app.css'>
+    <link rel='stylesheet' href='https://pro.fontawesome.com/releases/v5.2.0/css/all.css'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,700'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/1f3c27e6e5.js" crossorigin="anonymous"></script>
+    <style type="text/tailwindcss">
+        body{
+            font-family: 'Inter', sans-serif;
+        }
+        .navbar-fixed{
+            @apply fixed z-[9999] bg-slate-900 bg-opacity-20;
+            backdrop-filter: blur(5px);
+            box-shadow: inset 0 -1px 0 0 rgba(126, 126, 126, 0.2);
+        }
+        .hamburger-line{
+            @apply w-[30px] h-[2px] my-2 block bg-dark;
+        }
+        .hamburger-active > span:nth-child(1){
+            @apply rotate-45;
+        }
+        .hamburger-active > span:nth-child(3){
+            @apply -rotate-45;
+        }
+        .hamburger-active > span:nth-child(2){
+            @apply scale-0;
+        }
+
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                container: {
+                    center: true,
+                    padding: '16px',
+                },
+                extend: {
+                    fontFamily: {
+                        default: ['Poppins', 'sans-serif'],
+                        subhero: ['Oooh Baby', 'cursive'],
+                    },
+                    colors: {
+                        mermud: '#ec4899',
+                        dark: '#ffffff',
+                        dark2: '#ffffff',
+                    },
+                    screens: {
+                        '2xl': '1320px',
+                    },
+                },
+            },
+        }
+    </script>
+    <title>METAVERSE</title>
+    <!-- <link href="dist/output.css" rel="stylesheet" /> -->
+</head>
+
+<body class="bg-slate-900  font-default">
+    <div class="mx-12">
+    <!-- Header Section Start -->
+    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+        <div class="container" id="home">
+            <div class="flex items-center justify-between relative">
+                <div class="px-4">
+                    <a href="#home" class="font-bold bg-white px-4 rounded-full tex-lg text-mermud block my-6">ME<span class="text-cyan-600">VERS</span></a>
+                </div>
+                <div class="flex items-center px-4">
+                    <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+                    </button>
+                    <nav id="nav-menu"
+                        class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+                        <ul class="block lg:flex">
+                            <li class="group">
+                                <a href="#home"
+                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-white">Home</a>
+                            </li>
+                            <li class="group">
+                                <a href="#topdesc"
+                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-white">About</a>
+                            </li>
+                            <li class="group">
+                                <a href="#member"
+                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-white">Member</a>
+                            </li>
+                            <li class="group">
+                                <a href="#present"
+                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-white">Present</a>
+                            </li>
+                
+                            <li class="group">
+                                <a href="team.html"
+                                    class="text-base text-dark py-2 mx-8 flex group-hover:text-white">Our Team</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+     <!-- Hero Section Start -->
+     <section class="container my-32">
+        <div class="">
+           
+                <h1 class=" absolute top-1/2 left-1/2 -translate-x-1/2 text-white lg:text-[30px] font-extralight -translate-y-1/2">Introducing the<span id="background-title" class="block -mt-10 font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600 lg:text-[150px] ">
+                METAVERSE</span>
+        </h1>
+                <!-- <h1 class="absolute font-bold top-1/2 left-1/2 -translate-x-1/2 lg:text-[150px] bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600 -translate-y-1/2">METAVERSE</h1> -->
+            
+                <img src="img/brain.png" alt=""class="mt-32 mx-auto relative">
+                <h1 class=" absolute text-transparent top-1/2 left-1/2 -translate-x-1/2 lg:text-[30px] font-extralight -translate-y-1/2">Introducing the<span id="title-hero" class="block -mt-10  font-extrabold lg:text-[150px] ">
+                    METAVERSE</span><span class="text-white float-right text-[20px] -mt-12 font-subhero"><a href="#topdesc" class="button-a">Virtual Learning for Education</a></span>
+            </h1>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+    <!-- Virtual Learning Section Start -->
+    <div id="topdesc" class="text-transparent my-32">test</div>
+    <section id="desc" class="container my-32">
+            <div class="flex flex-wrap">
+                <div class="w-full lg:w-1/2 ">
+                    <div class="w-full px-4">
+                        <div class="mx-auto my-3">
+                            <h4 class="font-medium text-lg text-white my-4 bg-slate-300 bg-opacity-20 px-2 rounded-lg text-center lg:w-1/2">Virtual Learning for Education</h4>
+                            <button class="button-meta my-3" data-text="Awesome">
+                                <span class="actual-text font-semibold text-3xl sm:text-4xl lg:text-5xl">
+                                &nbsp;METAVERSE&nbsp;
+                                </span>
+                        
+                                <span class="hover-text-meta font-semibold text-3xl sm:text-4xl lg:text-5xl" aria-hidden="true">
+                                &nbsp;METAVERSE&nbsp;
+                                </span>
+                            </button>
+                            <p class="font-light text-medium text-gray-200 md:text-sm my-2 text-justify">The metaverse in education can be regarded as an educational environment enhanced by metaverse-related technologies which fuse with the elements of the virtual and the real educational environment. </p>
+                        </div>
+                                <i class="fa-brands fa-discord mr-2" id="icons"></i>
+                                <i class="fa-brands fa-meta mx-2" id="icons"></i>
+                                <i class="fa-brands fa-github mx-2" id="icons"></i>
+                                <i class="fa-solid fa-vr-cardboard mx-2" id="icons"></i>
+                                
+                    </div>
+                </div>
+                
+                <div class="w-full mx-auto text-center self-center px-4 lg:w-1/2 ">
+                    <div class="card-meta">
+                        <div class="circle"></div>
+                        <div class="content font-light text-medium text-white md:text-sm my-2 text-justify">
+                          <h3 class="font-medium text-lg text-white bg-slate-300 bg-opacity-20 px-2 rounded-lg">Virtual Reality</h3>
+                          <p class="text-gray-200">Using VR technology in our Metaverse Program will provide students with relational and immersive experiences.</p>
+                          <a href="#member" class="rainbow-btn">Learn More</a>
+                        </div>
+                        
+                        <img src="img/vr.png" alt="">
+                      </div>
+                    
+                    <div class="relative mt-10 lg:mt-9 lg:right-0">
+                        <span class="absolute -bottom-0 -z-10 left-1/2 -translate-x-1/2 md:scale-125">
+                        </span>
+                    </div>
+                    
+                </div>
+        </div>
+        <div class="kodfun-galeri capitalize font-normal">
+            <div style="background-image: url('img/card1.jpg');" class="content_img">
+            <div>immersive learning experiences</div>
+            </div>
+            <div style="background-image: url('img/card2.jpg');" class="content_img">
+            <div>greater learning speed</div>
+            </div>
+            <div style="background-image: url('img/card3.jpg');" class="content_img">
+            <div>an inclusive environment</div>
+            </div>
+            <div style="background-image: url('img/card4.jpg');" class="content_img">
+            <div>makes virtual interactions</div>
+            </div>
+            <div style="background-image: url('img/card5.jpg');" class="content_img">
+            <div>an ability to acquire hands-on experience</div>
+            </div>
+        </div>
+    </section>
+    <!-- Virtual Learning Section End -->
+    <!-- Present Section Start -->
+    <div id="member" class="text-transparent my-32">test</div>
+    <section class="container my-32">
+        <div class="mx-auto my-3 items-center">
+            <h4 class="font-medium text-lg text-white my-4 bg-slate-300 bg-opacity-20 px-2 rounded-lg text-center lg:w-1/6 mx-auto capitalize">Join membership</h4>
+           <div class="flex justify-center">
+            <button class="button-meta my-3" data-text="Awesome">
+                <span class="actual-text text-center font-semibold text-3xl sm:text-4xl lg:text-5xl">
+                &nbsp;METAVERSE&nbsp;
+                </span>
+        
+                <span class="hover-text-meta font-semibold text-3xl sm:text-4xl lg:text-5xl" aria-hidden="true">
+                &nbsp;METAVERSE&nbsp;
+                </span>
+            </button>
+           </div>
+           
+            <p class="mx-auto font-light text-medium  text-gray-200 md:text-sm my-2 text-center w-9/12">The World’s First Educational Metaverse Designed for the Classroom. Create Immersive and Engaging Lessons with Free Educational VR & AR Content. Qualified Teachers. 3D Models. 
+                Meverse Expeditions is packed full of engaging VR & AR content such as 360-degree photos, videos and 3D models to let the students experience the subjects and topics they’re learning.
+            </p>
+            
+                <div class="card-member my-16 mx-auto cursor-default">
+                    <i class="absolute lg:block sm:hidden opacity-50 -translate-y-7 mx-auto fa-brands fa-meta logo-card logo-card-bg"></i>
+                    <div class="card-member2">
+                        <div class=" card-member3">
+                            <i class="relative fa-brands fa-meta logo-card"></i>
+                        </div>
+                        <div class="card-member4">
+                            <i class="fa-solid fa-user chip text-slate-900"></i>
+                            <img src="img/logo-smk.png" alt="" class="card-logo ml-7">
+                            <h2 class="card-number font-normal">0051074861</h2>
+                            <h3 class="card-reg">STUDENT 0101021200</h3>
+                            <h3 class="card-num2">SOFTWARE ENGINEERING</h3>
+                            <i class="relative fa-brands fa-meta cartao__logo-card"></i>
+                        </div>
+                    </div>
+                </div>
+                
+        </div>
+    </section>
+    <section class="my-32 bg-gradient1">
+        <div class="flex flex-wrap">
+            <div class="w-full lg:w-2/5">
+                <div class="w-full">
+                       <img src="img/meta-people.png" class="rounded-l-[50px] h-[500px]" alt="">
+                 
+                            
+                            
+                </div>
+            </div>
+            
+            <div class="w-full mx-auto text-justify self-center px-4 lg:w-3/5">
+              
+                   <h1 class="text-white mr-12 font-bold text-5xl "> Let's create your avatar in the world of <span class="font-bold bg-slate-900 absolute w-[57%] text-mermud py-3 pl-10 rounded-full tex-lg block my-6 text-3xl"> ME<span class="text-cyan-400">VERS</span> </span></h1>
+                <div class="relative mt-10 lg:mt-9 lg:right-0">
+                    <span class="absolute -bottom-0 -z-10 left-1/2 -translate-x-1/2 md:scale-125">
+                    </span>
+                
+                
+            </div>
+    </div>
+   
+    </section>
+    <div id="present" class="text-transparent my-32">test</div>
+    <section class="container my-32">
+        <div>
+            <div class="w-full px-4">
+                <div class="mx-auto mb-8 text-center">
+                    <h4 class="font-medium text-lg text-white my-4 bg-slate-300 bg-opacity-20 px-2 rounded-lg text-center lg:w-1/6 mx-auto capitalize">supported by</h4>
+                    <h2 class="mb-4 text-3xl font-bold text-slate-400 sm:text-4xl lg:text-5xl">SMKN 2 SUMEDANG
+                    </h2>
+                    
+                </div>
+            </div>
+            <div class="w-full px-4">
+                <p class="font-medium text-medium text-center text-stone-600 md:text-lg">thanks to
+                </p>
+                <div class="flex flex-wrap items-center justify-center">
+                    <a href="#"
+                        class="max-w-[120px] mx-4 my-4 grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100 duration-500 lg:mx-6 xl:mx-8">
+                        <img src="img/Logo Himmi.png" alt="himmi">
+                    </a>
+                    <a href="#"
+                    class="max-w-[220px] mx-4 my-4 grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100 duration-500 lg:mx-6 xl:mx-8">
+                    <img src="img/logo-difest.png" alt="logo-difest.png">
+                </a>
+                    <a href="#"
+                        class="max-w-[120px] mx-4 my-4 grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100 duration-500 lg:mx-6 xl:mx-8">
+                        <img src="img/logoPOLSUB-HD.png" alt="polsub">
+                    </a>
+                    <a href="#"
+                        class="max-w-[120px] mx-4 my-4 grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100 duration-500 lg:mx-6 xl:mx-8">
+                        <img src="img/rpl.png" alt="rpl">
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</div>
+</body>
+<!-- Present Section End -->
+<!-- Footer Section Start -->
+<footer class="p-4 sm:p-6 bg-slate-700">
+    <div class="md:flex md:justify-between py-10 px-16">
+        <div class="mb-6 md:mb-0">
+            <h2 class="mb-4 text-3xl font-bold text-slate-400 lg:text-3xl">MEPHET
+            </h2>
+        </div>
+        <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+            <div>
+                <h2 class="mb-6 text-sm font-semibold uppercase text-white">Team</h2>
+                <ul class=" text-gray-400">
+                    <li class="mb-4">
+                        <a href="team.html" class="hover:text-slate-900">Nurchayati Amalia Abdillah</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="team.html" class="hover:text-slate-900">Aisyah Nur Fadilah</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="mb-6 text-sm font-semibold uppercase text-white">Follow us</h2>
+                <ul class=" text-gray-400">
+                    <li class="mb-4">
+                        <a href="#" class="hover:text-slate-900 ">Github</a>
+                    </li>
+                    <li>
+                        <a href="$" class="hover:text-slate-900">Discord</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="mb-6 text-sm font-semibold uppercase text-white">Legal</h2>
+                <ul class=" text-gray-400">
+                    <li class="mb-4">
+                        <a href="#" class="hover:text-slate-900">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-slate-900">Terms &amp; Conditions</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    
+
+    <hr class="my-6 borde border-white lg:my-8" />
+    
+    <div class="sm:flex sm:items-center sm:justify-between  mx-12">
+        <span class="text-sm text-gr text-gray-400">© 2023 <a href="#" class="hover:underline">SMKN 2 Sumedang</a>. All Rights Reserved.
+        </span>
+        <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
+            <i class="fa-brands fa-discord mr-2" id="icons"></i>
+            <i class="fa-brands fa-meta mx-2" id="icons"></i>
+            <i class="fa-brands fa-github mx-2" id="icons"></i>
+            <i class="fa-solid fa-vr-cardboard mx-2" id="icons"></i>
+        </div>
+    </div>
+</footer>
+
+<!-- Footer Section Start -->
+    <script src="script.js"></script>
+
