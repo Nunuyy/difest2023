@@ -174,10 +174,7 @@ ul li a {
     filter: drop-shadow(0 0 23px) var(--animation-color);
 }
 
-ul:hover li a:not(:hover) {
-    opacity: 0.3;
-    filter: blur(5px);
-}
+
 .card-meta {
     position: relative;
     width: 600px;
@@ -546,6 +543,13 @@ ul:hover li a:not(:hover) {
     background-size: 400% 400%;
     animation: anim 2.5s infinite ease-in-out;
     border-radius: 50px;
+}
+.bg-gradient-footer {
+   background: linear-gradient(
+    200deg, #312e81, #4c1d95, #c026d3
+    );
+    background-size: 400% 400%;
+    animation: anim 2.5s infinite ease-in-out;
 }
 .bg-gradient1 {
     background: linear-gradient(

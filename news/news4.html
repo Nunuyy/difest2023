@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css'>
+    <link rel='stylesheet' href='https://static.fontawesome.com/css/fontawesome-app.css'>
+    <link rel='stylesheet' href='https://pro.fontawesome.com/releases/v5.2.0/css/all.css'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,700'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/x-icon" href="img/meta.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/1f3c27e6e5.js" crossorigin="anonymous"></script>
+    <style type="text/tailwindcss">
+      body {
+        font-family: "Inter", sans-serif;
+      }
+      .navbar-fixed {
+        @apply fixed z-[9999] bg-slate-900 bg-opacity-20;
+        backdrop-filter: blur(5px);
+        box-shadow: inset 0 -1px 0 0 rgba(126, 126, 126, 0.2);
+      }
+      .hamburger-line {
+        @apply w-[30px] h-[2px] my-2 block bg-dark;
+      }
+      .hamburger-active > span:nth-child(1) {
+        @apply rotate-45;
+      }
+      .hamburger-active > span:nth-child(3) {
+        @apply -rotate-45;
+      }
+      .hamburger-active > span:nth-child(2) {
+        @apply scale-0;
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          container: {
+            center: true,
+            padding: "16px",
+          },
+          extend: {
+            fontFamily: {
+              default: ["Poppins", "sans-serif"],
+              subhero: ["Oooh Baby", "cursive"],
+            },
+            colors: {
+              mermud: "#ec4899",
+              dark: "#ffffff",
+              dark2: "#ffffff",
+            },
+            screens: {
+              "2xl": "1320px",
+            },
+          },
+        },
+      };
+    </script>
+    <title>News</title>
+
+    <script src="https://kit.fontawesome.com/70c682a6d6.js" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet" />
+  </head>
+
+  <body class="bg-slate-900 font-default">
+    <div class="mx-12">
+      <!-- Header Section Start -->
+      <header class="absolute top-0 left-0 z-10 flex items-center w-full bg-transparent">
+        <div class="container" id="home">
+          <div class="relative flex items-center justify-between">
+            <div class="px-4">
+              <a href="../index.html" class="block px-4 my-6 font-bold bg-white rounded-full tex-lg text-mermud">ME<span class="text-cyan-600">VERS</span></a>
+            </div>
+
+            <div class="flex items-center px-4">
+              <button id="hamburger" name="hamburger" type="button" class="absolute block right-4 lg:hidden">
+                <span class="transition duration-300 ease-in-out origin-top-left hamburger-line"></span>
+                <span class="transition duration-300 ease-in-out hamburger-line"></span>
+                <span class="transition duration-300 ease-in-out origin-bottom-left hamburger-line"></span>
+              </button>
+
+              <nav
+                id="nav-menu"
+                class="hidden absolute py-5 bg-white lg:bg-opacity-100 bg-opacity-50 shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none"
+              >
+                <ul class="block lg:flex">
+                  <li class="group">
+                    <a href="../index.html" class="flex py-2 mx-8 text-base font-bold lg:font-light lg:text-white text-slate-900">Back to Home</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+
+    <section id="news1" class="container my-32">
+      <section class="container my-32">
+        <div>
+          <div class="w-full px-4">
+            <div class="mx-auto mb-8 text-center">
+                <h4 class="px-2 mx-auto my-4 text-lg font-medium text-center text-white capitalize rounded-lg bg-slate-300 bg-opacity-20 lg:w-1/6">article</h4>
+                <div class="flex justify-center">
+                 <h2 class="mb-4 text-3xl font-bold text-slate-400 sm:text-4xl lg:text-5xl">MEVERS News
+                 </h2>
+                </div>
+                <div class="text-lg font-bold text-white capitalize">The Metaverse: A World Within Our World</div>
+
+            <section class="flex justify-center">
+                <div class="my-5">
+                <div class="py-12 overflow-hidden rounded-lg shadow-lg bg-slate-300 bg-opacity-20">
+                    <img class="w-1/2 mx-auto rounded-3xl" src="../img/card9.jpg" alt="mevers" />
+    
+                    <div class="px-6 py-4">
+                      <span class="text-mermud text-[16px]">Mevers</span><br>   
+                      <i class="text-white text-[15px] text-opacity-50 mx-auto">Saturday, 18 Februari 2023</i>
+                      <div class="mt-4 mb-2 text-lg font-bold text-white capitalize">The Metaverse: A World Within Our World</div>
+                      <p class="text-white px-20 text-[14px] text-justify">Metaverse virtual worlds are intriguing because they are a whole other reality. Each metaverse world is something that you can step into with the right technologies. These might be virtual reality (VR) goggles that fully immerse you in that new world. Or, it could be augmented reality (AR) systems that overlay the metaverse onto the offline world. But no matter how you look at it, the metaverse contains countless virtual worlds to explore.
+
+                        The metaverse can contain entire worlds due to the fact that it’s a boundless 3D universe with no limits. And that doesn’t just apply to the physical world. Social lives can also move seamlessly into the metaverse’s worlds. As the metaverse is right now, you can invite friends and family to come along with you on your digital adventures. Or you can make new friends along the way. The metaverse is an inherently social experience thanks to all the people within it.</p>
+                    </div>
+    
+                    <div class="px-6 pt-4 pb-2">
+                      <span class="inline-block px-3 py-1 mb-2 mr-2 text-sm font-semibold text-gray-700 bg-gray-200 rounded-full">#metaverse</span>
+                      <span class="inline-block px-3 py-1 mb-2 mr-2 text-sm font-semibold text-gray-700 bg-gray-200 rounded-full">#ar</span>
+                      <span class="inline-block px-3 py-1 mb-2 mr-2 text-sm font-semibold text-gray-700 bg-gray-200 rounded-full">#vr</span>
+                    </div>
+                  </div>
+                  </div>
+            </section>
+          </div>
+        </div>
+      </section>
+    </section>
+  </body>
+  <script src="script.js"></script>
+</html>
