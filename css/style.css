@@ -356,7 +356,6 @@ ul li a {
     transition: 1s all ease;
     cursor: pointer;
 }
-
 #icons:hover {
     text-shadow:
         #ffffff 0 0 15px,
